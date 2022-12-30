@@ -1,5 +1,5 @@
 <h1>Login</h1>
-<p>Usuario</p><input type="text">
-<p>Contraseña</p><input type="text">
+<p>Usuario</p><input type="text" #usuario>
+<p>Contraseña</p><input type="password" id="password" #password>
 <br>
-<button>Login</button>
+<button (click)="login(usuario.value,password.value)">Login</button>
